@@ -49,43 +49,42 @@ https://ibm.ent.box.com/file/2175013902181
   - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
   - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
   - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
 
+- ファイアウォールの無効化（ほんとは PORT 80/443 だけでいいかも）
+  - Server Manager起動
+    ```yaml
+    runas /user:Administrator powershell
+    Set-NetFirewallProfile -Profile Domain,Private,Public -Enabled False
+    ```
+
+- Flexera Oneにログイン（ https://ibm.app.flexera.com/orgs/33975 ）
+
+
+- Beacon ダウンロード（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P45 ）
+
+
+- Beacon Installer起動
+    ```yaml
+    runas /user:Administrator powershell
+    Start-Process C:\Users\itzuser\Downloads\BeaconInstaller25.5.0.9
+    ```
+
+- Beacon インストール（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P46,47 ）
+  - Server Manager起動
+    ```yaml
+    runas /user:Administrator powershell
+    Start-Process ServerManager.exe runAs
+    ```
+
+- Beacon 起動
+    ```yaml
+    runas /user:Administrator powershell
+    Start-Process "C:\Program Files\Flexera Software\Inventory Beacon\DotNet\bin\InventoryBeacon.exe"
+    ```
+
+- ビーコンの構成（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P49,50 ）
+  - メニュー「Data Collection/IT Assets インベントリ タスク/ビーコン」
+ 
 
   
 ## インストール（Agent用RHEL）
