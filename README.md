@@ -66,11 +66,6 @@ https://ibm.ent.box.com/file/2175013902181
     ```
 
 - Beacon インストール（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P46,47 ）
-  - Server Manager起動
-    ```yaml
-    runas /user:Administrator powershell
-    Start-Process ServerManager.exe runAs
-    ```
 
 - Beacon 起動
     ```yaml
@@ -81,6 +76,7 @@ https://ibm.ent.box.com/file/2175013902181
 - ビーコンの構成（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P49,50 ）
   - メニュー「Data Collection/IT Assets インベントリ タスク/ビーコン」
  
+
 
   
 ## インストール（Agent用RHEL）
