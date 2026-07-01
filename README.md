@@ -46,9 +46,11 @@ https://ibm.ent.box.com/file/2175013902181
     - 基本はデフォルトでOKだが、下記は注意
     -  ![alt text](./images/IIS.png)
 - Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
+  - Windows PowerShell起動（左下メニューから）
+    ```yaml
+　　runas /user:Administrator powershell
+　　Enable-PSRemoting -Force
+    ```
 
 - ファイアウォールの無効化（ほんとは PORT 80/443 だけでいいかも）
   - Server Manager起動
