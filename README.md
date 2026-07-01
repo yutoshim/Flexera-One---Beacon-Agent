@@ -48,10 +48,9 @@ https://ibm.ent.box.com/file/2175013902181
 - Windows Remote Management Serviceの有効化
   - Windows PowerShell起動（左下メニューから）
     ```yaml
-　　runas /user:Administrator powershell
-　　Enable-PSRemoting -Force
+    runas /user:Administrator powershell
+    Enable-PSRemoting -Force
     ```
-
 - ファイアウォールの無効化（ほんとは PORT 80/443 だけでいいかも）
   - Server Manager起動
     ```yaml
@@ -61,9 +60,7 @@ https://ibm.ent.box.com/file/2175013902181
 
 - Flexera Oneにログイン（ https://ibm.app.flexera.com/orgs/33975 ）
 
-
 - Beacon ダウンロード（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P45 ）
-
 
 - Beacon Installer起動
     ```yaml
