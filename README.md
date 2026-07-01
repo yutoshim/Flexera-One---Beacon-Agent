@@ -119,7 +119,4 @@ https://ibm.ent.box.com/file/2175013902181
   - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
   - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
   - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
-- Windows Remote Management Serviceの有効化
-  - Geography は itz-vpc-01 - americas - us-east region - us-east-3 datacenter を選択する（多分どっちでもOK）
-  - Configuration で Customizeして、Enables a public internet facing ip. を On にし、Security hardening は Off にする）
-  - VM が Ready になったら、 request ページを開いて Guacamole remote desktop にアクセスできることを確認
+
