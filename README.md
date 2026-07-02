@@ -115,12 +115,12 @@ https://ibm.ent.box.com/file/2175013902181
 - Beaconのホスト名設定
   ```yaml
   sudo vi /etc/hosts
-　<Beacon の public ip>   <Beacon の ホスト名>
+  <Beacon の public ip>   <Beacon の ホスト名>
   ```
 
 - Beaconのホストに疎通確認（curl だけでOK）
   ```yaml
-　curl http://<Beacon の ホスト名>
+  curl http://<Beacon の ホスト名>
   ```
 
 - Agent インストールブートストラップファイル作成（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P55 ）
