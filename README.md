@@ -154,7 +154,7 @@ https://ibm.ent.box.com/file/2175013902181
   ```
 
 - 手動インポート・照合（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P64 ）
-  - メニュー「Data Collection/照合」
+  - メニュー「Data Collection/照合」： 上記の手動インベントリ収集後、20-30分かかるようなので、後でやってみましょう
 
 - Agent確認（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P65 ）
   - メニュー「Inventory/Inventory/FlexNet Inventory Agent Status」（Device nameはホスト名）
