@@ -112,7 +112,7 @@ https://ibm.ent.box.com/file/2175013902181
   ping <Beacon の public ip>
   ```
 
-- eaconのホスト名設定
+- Beaconのホスト名設定
   ```yaml
   sudo vi /etc/hosts
 　<Beacon の public ip>   <Beacon の ホスト名>
