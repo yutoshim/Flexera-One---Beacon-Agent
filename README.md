@@ -107,7 +107,7 @@ https://ibm.ent.box.com/file/2175013902181
 
 - BeaconのIPに疎通確認（curl だけでOK）
   ```yaml
-　curl http://<Beacon の public ip>
+  curl http://<Beacon の public ip>
   ssh -p 80 <Beacon の public ip>
   ping <Beacon の public ip>
   ```
