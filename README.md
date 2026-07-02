@@ -131,7 +131,7 @@ https://ibm.ent.box.com/file/2175013902181
   ```
   - 上記をコピーして mgsft_rollout_response を作成
   ```yaml
-　vi /var/tmp/mgsft_rollout_response
+  vi /var/tmp/mgsft_rollout_response
   ```
 
 - Agent インストール（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P56 ）
