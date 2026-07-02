@@ -90,7 +90,7 @@ https://ibm.ent.box.com/file/2175013902181
 - Agent ダウンロード（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P54 ）
   - メニュー「Data Collection/インベントリの設定」
 
-ここからターミナル（Mac）、Teramterm（Windows）を操作
+###ここからターミナル（Mac）、Teramterm（Windows）を操作
 - pemのパーミッション変更
   ```yaml
   chmod 400 ssh_private_key.pem
