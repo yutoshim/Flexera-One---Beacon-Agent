@@ -58,6 +58,7 @@ https://ibm.ent.box.com/file/2175013902181
 - Flexera Oneにログイン（ https://ibm.app.flexera.com/orgs/33975 ）
 
 - Beacon ダウンロード（ FlexeraOne ITAM利用ガイド_v2.0.pptx の P45 ）
+  - メニュー「Data Collection/ビーコン」
 
 - Beacon Installer起動
     ```yaml
